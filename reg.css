@@ -1,0 +1,224 @@
+*{
+  box-sizing: border-box;
+}
+html {
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body{
+  margin: 0;
+  background-color: #F1F1F1;
+  overflow-x: hidden;
+}
+
+@media (min-width: 1536px){
+  html{
+    font-size: 18px;
+  }
+}
+
+@media(min-width: 2000px){
+  html{
+    font-size: 20px;
+  }
+}
+
+.body{
+  width: 100vw;
+  height: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.content{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url(source/login-background.webp);
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.introduce{
+  height: 100vh;
+  width: 37%;
+  background-color: #F1F1F1;
+  border-radius: 0px 75px 75px 0px;
+}
+
+.rousha{
+  color: #212121;
+  font-size: 1.33rem;
+  font-weight: 900;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+.arrow{
+  filter: brightness(0) saturate(100%) invert(58%) sepia(11%) saturate(0%) hue-rotate(353deg) brightness(92%) contrast(80%);
+  transform: rotate(-135deg);
+  aspect-ratio: 1/1;
+  width: 16px;
+  margin-right: 10px; 
+}
+
+a{
+  text-decoration: none;
+  color: #888888;
+}
+
+.exit{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+}
+
+label{
+  display: flex;
+  flex-direction: column;
+}
+
+.enter{
+  padding: 13.2vh 6.5vw;
+}
+
+.enter h1{
+  font-size: 4.375vw;
+  color: #212121;
+  margin: 0;
+}
+
+.enter p{
+  color: #888888;
+}
+
+.and{
+  text-align: center;
+}
+
+.enter label input{
+  margin-top: 1.2vh;
+  margin-bottom: 4.5vh;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  border-bottom: 2px solid #D9D9D9;
+  outline: none;
+  background-color: #F1F1F1;
+}
+
+.error {
+  border-bottom-color: red;
+}
+
+.enter button{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  background-color: #E86443;
+  border-radius: 10px;
+  color: #F1F1F1;
+  border: none;
+  padding: 2vh 0;
+  width: 100%;
+  transition: 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  border: 1px solid #E86443;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.enter button:hover{
+  background-color: transparent;
+  color: #212121;
+  border: 1px solid #212121;
+}
+
+.enter button img{
+  aspect-ratio: 1/1;
+  width: 1.6vw;
+  margin-right: 0.5vw;
+}
+
+#googleButton{
+  padding: 1.54vh 0;
+  background-color: transparent;
+  color: #212121;
+  border: 1px solid #212121;
+}
+
+.connect{
+  text-decoration: underline;
+  color: #212121;
+}
+
+.gdp{
+  text-align: center;
+}
+
+#place::placeholder{
+  padding-left: 0.78vw;
+}
+
+@media (max-width:1024px) {
+  .willdis{
+    display: none;
+  }
+
+  .enter h1{
+    display: none;
+  }
+
+  .rousha{
+    top: 25px;
+    left: 25px;
+  }
+
+  #place::placeholder{
+    font-size: 13px;
+  }
+}
+
+
+@media (max-width: 430px) {
+  .content{
+    background-image: url(/source/login-background-mobile.webp);
+    background-position: top;
+  }
+
+  .rousha{
+    display: none;
+  }
+
+  .introduce{
+    width: 100vw;
+    height: 87%;
+    position: absolute;
+    bottom: 0;
+    border-radius: 25px 25px 0px 0px;
+  }
+
+  .enter h1{
+    display: block;
+    font-size: 64px;
+    margin-top: 35px;
+  }
+
+  .enter{
+    padding: 0 6.5vw;
+  }
+
+  .enter button img{
+    aspect-ratio: 1/1;
+    width: 21px;
+    margin-right: 0.5vw;
+  }
+
+}
