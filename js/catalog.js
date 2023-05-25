@@ -16,7 +16,7 @@ burger.addEventListener('click', () => {
      "cart":"../catalog/cart.webp",
      "name":"Jaketa la 1 Rând",
      "color":"Negru",
-     "img":"../catalog/JaketaNeagra.webp",
+     "img":"../catalog/jaketaNeagra.webp",
      "price": "49"
    },
    {
